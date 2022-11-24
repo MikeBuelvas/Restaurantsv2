@@ -1,4 +1,4 @@
-@startuml
+@startuml Restaurant uml
 
 class Restaurant{
 +name: str
@@ -8,8 +8,7 @@ class Restaurant{
 +cash_register: Cash_Register
 +employees: list
 +clients: list
-+add_employee()
-+add_client()  
++add_employee() 
 }
 
 abstract class "Person"{
@@ -52,14 +51,15 @@ class Order{
 }
 
 class Invoice{
-id: int,
-client: Client,
++id: int
++client: Client
 order: Order  
 }
 
 class Kitchen{
 +inventary: Inventary
 +saucers: list
++orders: list
 +create_saucer()
 +cook_saucer()
 }
