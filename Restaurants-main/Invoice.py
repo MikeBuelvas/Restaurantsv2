@@ -10,3 +10,4 @@ class Invoice:
         self.id = id
         self.client = client
         self.order = order
+        self.total = 0
